@@ -197,14 +197,15 @@
 
 <script>
   const form = document.getElementById("bookingForm");
-  const message = document.getElementById("successMessage");
 
   form.addEventListener("submit", function(e) {
     e.preventDefault();
 
-    message.innerText = "✅ Your booking request has been received! We will contact you shortly.";
+    // Optional: store basic info (for future use)
+    localStorage.setItem("bookingMade", "true");
 
-    form.reset();
+    // Redirect to confirmation page
+    window.location.href = "confirmation.html";
   });
 </script>
 
