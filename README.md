@@ -4,8 +4,12 @@ A static website for GreenScape Landscaping, a Dublin-based landscaping company 
 
 ## Features
 
-- Responsive design
-- Services overview
+- Modern responsive design with Google Fonts
+- Sticky navbar with navigation and CTA button
+- Hero section with gradient overlay and call-to-action
+- Services section with image cards and hover effects
+- About section
+- Call-to-action section
 - Booking form with date/time selection
 - Confirmation page after booking
 - Hero section with background image
