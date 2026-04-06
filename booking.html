@@ -77,6 +77,22 @@
       box-shadow: 0 0 5px rgba(46,125,50,0.3);
     }
 
+    textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      transition: 0.3s;
+      resize: vertical;
+    }
+
+    textarea:focus {
+      border-color: #2e7d32;
+      outline: none;
+      box-shadow: 0 0 5px rgba(46,125,50,0.3);
+    }
+
     /* BUTTON */
     button {
       width: 100%;
@@ -93,32 +109,6 @@
     button:hover {
       background: #43a047;
       transform: scale(1.03);
-    }
-
-    /* TIME SLOTS */
-    .times {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      margin-top: 10px;
-    }
-
-    .time-slot {
-      padding: 10px;
-      border-radius: 20px;
-      background: #e8f5e9;
-      text-align: center;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .time-slot:hover {
-      background: #c8e6c9;
-    }
-
-    .selected {
-      background: #2e7d32;
-      color: white;
     }
 
     /* IMAGE HEADER */
@@ -144,27 +134,14 @@
   <div class="top-image"></div>
 
   <h1>Request Your Free Quote 🏗️</h1>
-  <p>Select a date and time for your consultation</p>
+  <p>Tell us about your project</p>
 
   <form id="bookingForm">
 
     <input type="text" id="name" placeholder="Your Name" required>
     <input type="email" id="email" placeholder="Your Email" required>
 
-    <label>Select Date:</label>
-    <input type="date" id="date" required>
-
-    <label>Select Time:</label>
-    <div class="times">
-      <div class="time-slot">09:00</div>
-      <div class="time-slot">10:00</div>
-      <div class="time-slot">11:00</div>
-      <div class="time-slot">12:00</div>
-      <div class="time-slot">13:00</div>
-      <div class="time-slot">14:00</div>
-    </div>
-
-    <input type="hidden" id="selectedTime" required>
+    <textarea id="description" placeholder="Briefly describe the work you need done (e.g., new home build, kitchen renovation, office construction)" rows="4" required></textarea>
 
     <button type="submit">Request Quote</button>
 
@@ -173,28 +150,17 @@
 </div>
 
 <script>
-  const slots = document.querySelectorAll(".time-slot");
-  const hiddenInput = document.getElementById("selectedTime");
-
-  slots.forEach(slot => {
-    slot.addEventListener("click", () => {
-      slots.forEach(s => s.classList.remove("selected"));
-      slot.classList.add("selected");
-      hiddenInput.value = slot.innerText;
-    });
-  });
-
   document.getElementById("bookingForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
     const name = document.getElementById("name").value;
-    const date = document.getElementById("date").value;
-    const time = hiddenInput.value;
+    const email = document.getElementById("email").value;
+    const description = document.getElementById("description").value;
 
     // Save quote details
     localStorage.setItem("name", name);
-    localStorage.setItem("date", date);
-    localStorage.setItem("time", time);
+    localStorage.setItem("email", email);
+    localStorage.setItem("description", description);
 
     // Redirect
     window.location.href = "confirmation.html";
