@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GreenScape Landscaping | Dublin Landscaping Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional landscaping services in Dublin. Lawn care, garden design, patios & more. Get a free quote today.">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #1b5e20;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background: #388e3c;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1598908314732-07113901949e?q=80&w=1200') center/cover;
+      color: white;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #2e7d32;
+    }
+
+    .contact {
+      background: #f4f4f4;
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #1b5e20;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    button {
+      background: #2e7d32;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background: #388e3c;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>GreenScape Landscaping</h1>
+  <p>Dublin’s Trusted Landscaping Experts</p>
+</header>
+
+<nav>
+  <a href="#services">Services</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+  <h1>Beautiful Gardens. Built to Last.</h1>
+</section>
+
+<section class="container" id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Lawn Care</h3>
+      <p>Mowing, fertilising, and regular maintenance.</p>
+    </div>
+    <div class="card">
+      <h3>Garden Design</h3>
+      <p>Custom layouts tailored to your home.</p>
+    </div>
+    <div class="card">
+      <h3>Patios & Decking</h3>
+      <p>High-quality outdoor spaces for relaxing.</p>
+    </div>
+  </div>
+</section>
+
+<section class="container" id="about">
+  <h2>About Us</h2>
+  <p>We are a Dublin-based landscaping company with over 10 years of experience transforming outdoor spaces for homes and businesses.</p>
+</section>
+
+<section class="container" id="contact">
+  <h2>Get a Free Quote</h2>
+  <div class="contact">
+    <p><strong>Phone:</strong> 087 123 4567</p>
+    <p><strong>Email:</strong> info@greenscape.ie</p>
+
+    <!-- Mailto form (works on GitHub Pages) -->
+    <form action="mailto:info@greenscape.ie" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p style="font-size: 14px;">(This will open your email app)</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 GreenScape Landscaping | Dublin</p>
+</footer>
+
+</body>
+</html>
