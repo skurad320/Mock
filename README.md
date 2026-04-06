@@ -6,8 +6,9 @@ A static website for GreenScape Landscaping, a Dublin-based landscaping company 
 
 - Responsive design
 - Services overview
-- Contact form (mailto)
-- Booking form for free consultations
+- Booking form with date/time selection
+- Confirmation page after booking
+- Hero section with background image
 - Hero section with background image
 
 ## How to Run Locally
