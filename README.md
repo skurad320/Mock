@@ -1,6 +1,6 @@
-# GreenScape Landscaping Website
+# HPH Construction Website
 
-A static website for GreenScape Landscaping, a Dublin-based landscaping company offering services like lawn care, garden design, and patios & decking.
+A static website for HPH Construction, a professional building company offering residential, renovation, and commercial construction services.
 
 ## Features
 
@@ -10,9 +10,9 @@ A static website for GreenScape Landscaping, a Dublin-based landscaping company 
 - Services section with image cards and hover effects
 - About section
 - Call-to-action section
-- Booking form with date/time selection and interactive time slots
-- Personalized confirmation page displaying booking details
-- localStorage for storing booking details
+- Quote request form with date/time selection and interactive time slots
+- Personalized confirmation page displaying request details
+- localStorage for storing request details
 - Hero section with background image
 - Hero section with background image
 

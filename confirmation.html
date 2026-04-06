@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Booking Confirmed | GreenScape</title>
+  <title>Quote Requested | HPH Construction</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Same bubbly font -->
@@ -88,11 +88,11 @@
 
 <div class="card">
 
-  <div class="icon">🌿</div>
+  <div class="icon">🏗️</div>
 
-  <h1>You're All Set!</h1>
+  <h1>Quote Requested!</h1>
 
-  <p id="personalMessage">Thank you for booking with us.</p>
+  <p id="personalMessage">Thank you for choosing HPH Construction.</p>
 
   <div class="details">
     <p><strong>Name:</strong> <span id="name"></span></p>
@@ -100,8 +100,8 @@
     <p><strong>Time:</strong> <span id="time"></span></p>
   </div>
 
-  <p>We truly appreciate you choosing GreenScape.</p>
-  <p>Our team will contact you shortly to confirm everything 🌱</p>
+  <p>We appreciate your interest in our services.</p>
+  <p>Our team will contact you shortly to discuss your project and provide a detailed quote 🏗️</p>
 
   <a href="index.html" class="btn">Back to Home</a>
 
@@ -117,7 +117,7 @@
   if (name) {
     document.getElementById("name").innerText = name;
     document.getElementById("personalMessage").innerText =
-      "Thanks " + name + ", your booking has been received!";
+      "Thanks " + name + ", your quote request has been received!";
   }
 
   if (date) document.getElementById("date").innerText = date;

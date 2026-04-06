@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Book a Consultation | GreenScape</title>
+  <title>Request a Quote | HPH Construction</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Same bubbly font -->
@@ -124,7 +124,7 @@
     /* IMAGE HEADER */
     .top-image {
       height: 200px;
-      background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200') center/cover;
+      background: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200') center/cover;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
     }
@@ -135,7 +135,7 @@
 <body>
 
 <nav>
-  <h2>GreenScape</h2>
+  <h2>HPH Construction</h2>
   <a href="index.html">← Back</a>
 </nav>
 
@@ -143,8 +143,8 @@
 
   <div class="top-image"></div>
 
-  <h1>Book Your Consultation 🌿</h1>
-  <p>Select a date and time that suits you</p>
+  <h1>Request Your Free Quote 🏗️</h1>
+  <p>Select a date and time for your consultation</p>
 
   <form id="bookingForm">
 
@@ -166,7 +166,7 @@
 
     <input type="hidden" id="selectedTime" required>
 
-    <button type="submit">Confirm Booking</button>
+    <button type="submit">Request Quote</button>
 
   </form>
 
@@ -191,7 +191,7 @@
     const date = document.getElementById("date").value;
     const time = hiddenInput.value;
 
-    // Save booking details
+    // Save quote details
     localStorage.setItem("name", name);
     localStorage.setItem("date", date);
     localStorage.setItem("time", time);
