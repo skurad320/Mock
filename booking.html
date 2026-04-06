@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book a Free Consultation - GreenScape Landscaping</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book a free consultation with GreenScape Landscaping for your landscaping needs.">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+    }
+
+    header {
+      background: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #1b5e20;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background: #388e3c;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    h2 {
+      color: #2e7d32;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background: #2e7d32;
+      color: white;
+      border: none;
+      padding: 15px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #388e3c;
+    }
+
+    footer {
+      background: #1b5e20;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>GreenScape Landscaping</h1>
+  <p>Book Your Free Consultation</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="index.html#services">Services</a>
+  <a href="index.html#about">About</a>
+  <a href="index.html#contact">Contact</a>
+</nav>
+
+<section class="container">
+  <h2>Free Consultation Booking</h2>
+  <p>Fill out the form below to schedule your free consultation. We'll discuss your landscaping needs and provide a personalized quote.</p>
+
+  <form action="mailto:info@greenscape.ie" method="POST" enctype="text/plain">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="address">Property Address</label>
+    <input type="text" id="address" name="address" required>
+
+    <label for="service">Service Interested In</label>
+    <select id="service" name="service" required>
+      <option value="">Select a service</option>
+      <option value="lawn-care">Lawn Care</option>
+      <option value="garden-design">Garden Design</option>
+      <option value="patios-decking">Patios & Decking</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="date">Preferred Date</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="time">Preferred Time</label>
+    <select id="time" name="time" required>
+      <option value="">Select a time</option>
+      <option value="morning">Morning (9am - 12pm)</option>
+      <option value="afternoon">Afternoon (12pm - 5pm)</option>
+    </select>
+
+    <label for="message">Additional Details</label>
+    <textarea id="message" name="message" rows="4" placeholder="Describe your project or any questions..."></textarea>
+
+    <button type="submit">Book Consultation</button>
+  </form>
+
+  <p style="font-size: 14px; text-align: center;">(This will open your email app to send the booking request)</p>
+</section>
+
+<footer>
+  <p>© 2026 GreenScape Landscaping | Dublin</p>
+</footer>
+
+</body>
+</html>
