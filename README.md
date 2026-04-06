@@ -11,7 +11,7 @@ A static website for GreenScape Landscaping, a Dublin-based landscaping company 
 - About section
 - Call-to-action section
 - Booking form with date/time selection and interactive time slots
-- Confirmation page after booking
+- Personalized confirmation page displaying booking details
 - localStorage for storing booking details
 - Hero section with background image
 - Hero section with background image
